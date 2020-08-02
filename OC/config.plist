@@ -337,7 +337,23 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBPortsB85M.kext</string>
+				<string>USBInjectAll.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBInjectAll</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>USBPower.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -878,7 +894,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>dart=0 -no_compat_check -v keepsyms=1</string>
+				<string>dart=0 -no_compat_check keepsyms=1</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>prev-lang:kbd</key>
@@ -1004,7 +1020,6 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>AudioDxe.efi</string>
 			<string>HFSPlus.efi</string>
 			<string>OpenRuntime.efi</string>
 		</array>
@@ -1103,7 +1118,18 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Address</key>
+				<integer>268435456</integer>
+				<key>Comment</key>
+				<string>HD3000: IGPU memory corruption errata</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Size</key>
+				<integer>268435456</integer>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>
