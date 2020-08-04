@@ -42,7 +42,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-EC-USBX.aml</string>
 			</dict>
@@ -227,7 +227,7 @@
 				<key>ATY,Copyright</key>
 				<string>Copyright AMD Inc. All Rights Reserved. 2005-2019</string>
 				<key>ATY,DeviceName</key>
-				<string>570</string>
+				<string>470</string>
 				<key>ATY,EFIVersion</key>
 				<string>01.00.931</string>
 				<key>ATY,FamilyName</key>
@@ -337,13 +337,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
+				<string>USBPorts.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1124,7 +1124,7 @@
 				<integer>268435456</integer>
 				<key>Comment</key>
 				<string>HD3000: IGPU memory corruption errata</string>
-				<key>Disabled</key>
+				<key>Enabled</key>
 				<false/>
 				<key>Size</key>
 				<integer>268435456</integer>
